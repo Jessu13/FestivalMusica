@@ -1,0 +1,28 @@
+
+.sobre-festival {
+   
+    padding: 5rem 0;
+
+    @include tablet{
+        @include grid(2,5rem);
+    }
+}
+
+.contenido-festival {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 5rem;
+    @include tablet {
+        margin-top: 0;
+    }
+    h2{
+        margin-bottom: 2rem;
+    }
+
+    .fecha{
+        color: $rosa;
+        font-weight: 700;
+    }
+}
