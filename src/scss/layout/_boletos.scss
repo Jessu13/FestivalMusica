@@ -1,0 +1,65 @@
+
+.boletos {
+    padding: 5rem 0;
+    h3 {
+        text-align: center;
+        color: $blanco;
+        margin-bottom: 2rem;
+    }
+
+    .contenedor-boletos {
+
+        @include tablet {
+            @include grid(2, 5rem);
+        }
+    }
+}
+
+.pase {
+    color: black;
+
+    .nombre-pase {
+        text-align: center;
+        font-size: 2.8rem;
+        color: $blanco;
+    }
+
+    &-header,
+    &-footer  {
+        padding: .5rem;
+        p {
+            text-align: center;
+            color: $blanco;
+            margin: 0;
+        }
+    }
+
+    &-header {
+        background-color: $rosa;
+        p {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+    }
+    &-body {
+        background-color: $blanco;
+
+        ul {
+            @include resetearLista;
+            li, 
+            :nth-child(odd) {
+                background-color: $blanco;
+                padding: 1rem;
+                border-bottom: 1px solid #e1e1e1;
+            }
+        }
+    }
+    &-footer {
+        background-color: $morado;
+        p {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+    }
+}
+
