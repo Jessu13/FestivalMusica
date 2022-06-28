@@ -45,7 +45,11 @@
     <section class="contenedor sobre-festival">
 
         <div class="imagen">
-            <img src="img/imagen_vocalista.jpg" alt="Imagen vocalista festival">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+
+                <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="imagen vocalista">
+            </picture>
         </div>
         <div class="contenido-festival">
             <h2>
@@ -56,6 +60,173 @@
         </div>
 
     </section>
+
+    <section class="lineup">
+        <h3>Line Up</h3>
+        <p class="dia"> Viernes 21</p>
+        
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+
+                <p class="nombre-escenario"> Esecenario Rock</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 Seconds to Mars</span>
+                    </li>
+                </ul>
+            </div> <!-- Aquí termina escenario-->
+            <div class="escenario edm bg-verde">
+
+                <p class="nombre-escenario"> Esecenario EDM</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tïesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Dash Berlin</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Fedde Legrand</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Audien</span>
+                    </li>
+                </ul>
+            </div><!-- Aquí termina escenario-->
+            
+        </div><!-- Aquí termina escenarios-contenedor-->
+
+        <p class="dia"> Sábado 22</p>
+        
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+
+                <p class="nombre-escenario"> Esecenario Rock</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Red Hot Chili Peppers</span>
+                    </li>
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deftones</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Limp Bizkit</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Papa Roach</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Lamb of God</span>
+                    </li>
+                </ul>
+            </div> <!-- Aquí termina escenario-->
+            <div class="escenario edm bg-amarillo">
+
+                <p class="nombre-escenario"> Esecenario EDM</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Paul Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Eric Prdyz</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Ferry Corsten</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vini Vici</span>
+                    </li>
+                </ul>
+            </div><!-- Aquí termina escenario-->
+            
+        </div><!-- Aquí termina escenarios-contenedor-->
+    </section>
+
+    <section class="galeria contenedor">
+        <h3>
+            Galería
+        </h3>
+        <ul class="galeria-imagenes">
+
+        </ul>
+    </section>
+
+    <section class="boletos bg-verde">
+        <h3>Boletos</h3>
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 Día</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+            </div>
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 Días</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                        <li>Camisa del Evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <script src="build/js/galeria.js"></script>
 
 </body>
 </html>
