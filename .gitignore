@@ -1,2 +1,6 @@
 .class
 node_modules
+package-lock.json
+src
+gulpfije.js
+package.json
